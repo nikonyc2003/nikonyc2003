@@ -1,0 +1,19 @@
+#include<iostream>
+#include <math.h>
+using namespace std;
+
+int twoPart(int n) {
+int count = 0;
+while(n % 2 == 0) {
+   count++;
+   n = n / 2;
+   }
+   return pow(2, count);
+}
+
+int main() {
+
+        cout << twoPart(16) << endl;  // prints  16
+        cout << twoPart(666) << endl;  // prints  2
+        cout << twoPart(777) << endl;  // prints  1
+        return 0;
